@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "URLImage",
     platforms: [
-        .iOS(.v11),
+        .iOS(.v10),
         .tvOS(.v11),
         .macOS(.v10_13),
         .watchOS(.v4)
