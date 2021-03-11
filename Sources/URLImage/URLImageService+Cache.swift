@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 17/11/2020.
 //
-
+#if !arch(arm)
 import Foundation
 
 
@@ -66,3 +66,4 @@ extension URLImageService {
         }
     }
 }
+#endif

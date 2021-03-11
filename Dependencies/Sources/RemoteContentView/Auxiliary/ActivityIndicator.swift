@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 12/08/2020.
 //
-
+#if !arch(arm)
 import SwiftUI
 
 
@@ -79,3 +79,4 @@ struct ActivityIndicator_Previews: PreviewProvider {
             .background(Color.white)
     }
 }
+#endif

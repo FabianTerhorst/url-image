@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 02/10/2020.
 //
-
+#if !arch(arm)
 import Foundation
 
 
@@ -71,3 +71,4 @@ final class InMemoryCache {
 
     private let nsCache = NSCache<NSString, TransientImageWrapper>()
 }
+#endif

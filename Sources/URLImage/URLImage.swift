@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 16/08/2020.
 //
-
+#if !arch(arm)
 import SwiftUI
 
 #if canImport(RemoteContentView)
@@ -191,3 +191,4 @@ public extension URLImage where Empty == EmptyView,
                   content: content)
     }
 }
+#endif

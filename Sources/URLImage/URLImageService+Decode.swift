@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 19/11/2020.
 //
-
+#if !arch(arm)
 import Foundation
 
 #if canImport(DownloadManager)
@@ -97,3 +97,4 @@ private extension URLImageOptions {
         }
     }
 }
+#endif

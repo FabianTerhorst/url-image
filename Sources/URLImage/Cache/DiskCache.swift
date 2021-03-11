@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 02/10/2020.
 //
-
+#if !arch(arm)
 import Foundation
 import CoreGraphics
 import Combine
@@ -170,3 +170,4 @@ final class DiskCache {
         }
     }
 }
+#endif

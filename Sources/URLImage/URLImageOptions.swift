@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 02/10/2020.
 //
-
+#if !arch(arm)
 import Foundation
 import CoreGraphics
 
@@ -100,3 +100,4 @@ public struct URLImageOptions {
         self.maxPixelSize = maxPixelSize
     }
 }
+#endif

@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 28/07/2020.
 //
-
+#if !arch(arm)
 import Combine
 
 #if canImport(Log)
@@ -103,3 +103,4 @@ final class DownloadSubscription<SubscriberType: Subscriber>: Subscription
         manager.reset(download: download)
     }
 }
+#endif

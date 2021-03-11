@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 09/08/2020.
 //
-
+#if !arch(arm)
 import Foundation
 import Combine
 
@@ -72,3 +72,4 @@ final class AnyRemoteContent<Value, Progress> : RemoteContent {
         cancelClosure()
     }
 }
+#endif

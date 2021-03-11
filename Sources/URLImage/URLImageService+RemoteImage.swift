@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 15/01/2021.
 //
-
+#if !arch(arm)
 import Foundation
 import Combine
 
@@ -97,3 +97,4 @@ extension URLImageService {
         return RemoteImagePublisher(remoteImage: remoteImage)
     }
 }
+#endif

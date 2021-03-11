@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 30/09/2020.
 //
-
+#if !arch(arm)
 import ImageIO
 import SwiftUI
 
@@ -94,3 +94,4 @@ struct TransientImage: TransientImageType {
         decoder.frameOrientation(at: 0)
     }
 }
+#endif

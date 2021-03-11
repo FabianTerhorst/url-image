@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 30/11/2020.
 //
-
+#if !arch(arm)
 import CoreGraphics
 
 
@@ -19,3 +19,4 @@ extension URLImageService {
         #endif
     }
 }
+#endif

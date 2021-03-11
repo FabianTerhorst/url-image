@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 29/07/2020.
 //
-
+#if !arch(arm)
 import Foundation
 import Combine
 
@@ -54,3 +54,4 @@ public final class DownloadManager {
         serialQueue.sync(execute: closure)
     }
 }
+#endif

@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 08/11/2020.
 //
-
+#if !arch(arm)
 #if canImport(RemoteContentView)
 import RemoteContentView
 #endif
@@ -32,3 +32,4 @@ extension RemoteContentViewLoadOptions {
         self = options
     }
 }
+#endif

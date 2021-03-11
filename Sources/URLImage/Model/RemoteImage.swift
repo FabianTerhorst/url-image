@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 25/08/2020.
 //
-
+#if !arch(arm)
 import SwiftUI
 import Combine
 
@@ -305,3 +305,4 @@ extension RemoteImage {
         }
     }
 }
+#endif

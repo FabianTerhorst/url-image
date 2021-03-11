@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 09/08/2020.
 //
-
+#if !arch(arm)
 import SwiftUI
 import Combine
 
@@ -99,3 +99,4 @@ public struct RemoteContentView<Value, Progress, Empty, InProgress, Failure, Con
 
     @ObservedObject private var remoteContent: AnyRemoteContent<Value, Progress>
 }
+#endif

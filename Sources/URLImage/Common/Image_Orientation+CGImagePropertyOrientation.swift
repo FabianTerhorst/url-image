@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 17/09/2020.
 //
-
+#if !arch(arm)
 import ImageIO
 import SwiftUI
 
@@ -25,3 +25,4 @@ extension Image.Orientation {
         }
     }
 }
+#endif

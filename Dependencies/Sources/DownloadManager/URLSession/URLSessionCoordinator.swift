@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 07/07/2020.
 //
-
+#if !arch(arm)
 import Foundation
 import Combine
 
@@ -195,3 +195,4 @@ final class URLSessionCoordinator {
         serialQueue.sync(execute: closure)
     }
 }
+#endif

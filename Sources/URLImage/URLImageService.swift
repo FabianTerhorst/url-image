@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 25/08/2020.
 //
-
+#if !arch(arm)
 import Foundation
 import CoreGraphics
 import Combine
@@ -50,3 +50,4 @@ public final class URLImageService {
     private init() {
     }
 }
+#endif

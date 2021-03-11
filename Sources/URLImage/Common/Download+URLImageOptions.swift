@@ -4,7 +4,7 @@
 //
 //  Created by Dmytro Anokhin on 20/11/2020.
 //
-
+#if !arch(arm)
 import Foundation
 
 #if canImport(DownloadManager)
@@ -25,3 +25,4 @@ extension Download {
         }
     }
 }
+#endif
